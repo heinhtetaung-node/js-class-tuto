@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>API Design</title>
+	<!-- font-awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet"> 
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- custom Css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-center">
+			<!-- nav header -->
+	        <div class="nav-header">
+		        <img src="./logo.svg" class="logo" alt="logo" />
+	        </div>
+	        <!-- links -->
+	        <ul class="links">
+	        	<li>
+	        	  <a href="index.html">home</a>
+	        	</li>
+	          	<li>
+	          	  <a href="about.html">about</a>
+	          	</li>
+	          	<li>
+	          	  <a href="projects.html">projects</a>
+	          	</li>
+	          	<li>
+	          	  <a href="cart.html">Cart</a>
+	          	</li>
+	        </ul>
+		</div>
+	</nav>
+
+	<div class="middle">
+		<div class="item1" id="categories"></div>
+
+		<div class="item2" id="products"></div>	
+
+		<div id="categoryDetails">
+			<div id="categoryDetail"></div>
+		</div>
+
+		<div class="detail" id="appearDetail">
+			<div id="detail"></div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

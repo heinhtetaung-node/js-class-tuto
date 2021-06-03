@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- font-awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet"> 
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- custom Css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<div class="category">
+		<nav>
+			<div class="nav-center">
+				<!-- nav header -->
+		        <div class="nav-header">
+			        <img src="./logo.svg" class="logo" alt="logo" />
+		        </div>
+		        <!-- links -->
+		        <ul class="links">
+		        	<li>
+		        	  <a href="admin.html">Products</a>
+		        	</li>
+		          	<li>
+		          	  <a href="category.html">Category</a>
+		          	</li>
+		          	<li>
+		          	  <a href="projects.html">Products New</a>
+		          	</li>
+		          	<li>
+		          	  <a href="order.html">Order</a>
+		          	</li>
+		        </ul>
+			</div>
+		</nav>
+
+	
+		<div class="container cat-list mt-5">
+	
+			
+			<h1>Category List</h1>
+
+			<div class="inner-list">
+				<ul id="cat">
+						
+				</ul>
+			</div>
+			
+				
+
+			<div class="inner-new">
+				<input type="text" name="name" id="name" class="form-control">
+
+				<br>
+				<button id="edit" class="btn btn-primary">Edit</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="categoryApp.js"></script>
+</body>
+</html>

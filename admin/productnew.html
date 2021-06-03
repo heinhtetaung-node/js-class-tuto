@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- font-awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet"> 
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- custom Css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-center">
+			<!-- nav header -->
+	        <div class="nav-header">
+		        <img src="./logo.svg" class="logo" alt="logo" />
+	        </div>
+	        <!-- links -->
+	        <ul class="links">
+	        	<li>
+	        	  <a href="admin.html">Products</a>
+	        	</li>
+	          	<li>
+	          	  <a href="category.html">Category</a>
+	          	</li>
+	          	<li>
+	          	  <a href="productnew.html">Products New</a>
+	          	</li>
+	          	<li>
+	          	  <a href="order.html">Order</a>
+	          	</li>
+	        </ul>
+		</div>
+	</nav>
+
+	<div class="admin">
+		<div class="container mt-5">
+			<form id="product-form" method="post" enctype="multipart/form-data" action="product-add" autocomplete="off">
+				<label for="title">Product Name</label>
+				<input type="text" name="title" id="title" class="form-control">
+
+				<label for="price">Price </label>
+				<input type="number" name="price" id="price" class="form-control">
+
+				<div class="form-group">
+				    <label for="categories">Example select</label>
+				    <select class="form-control" id="categories" name="category_id">
+				    	<option value="0">-- Choose --</option>
+					    	
+				    </select>
+				 </div>
+
+				<label for="des">Destruction</label>
+				<textarea class="form-control" name="des" id="des" rows="6"></textarea>
+
+				<div class="form-group">
+				    <label for="file">Example file input</label>
+				    <input type="file" class="form-control-file" onchange="onSelectFile(event)" id="file" name="file">
+				    <div id="image-preview"></div>
+				</div>
+
+				<div class="row no-gutters justify-content-end">
+					<button type="submit" name="submit" onclick="return insertProdct()" class="btn btn-primary">Post</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="container cat-detail">
+
+		<div id="pro" class="pro">
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="adminapp.js"></script>
+	<script type="text/javascript" src="js/product.js"></script>
+</body>
+</html>

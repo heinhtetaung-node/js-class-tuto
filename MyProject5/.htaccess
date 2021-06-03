@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /MyProject5
+
+RewriteRule ^([a-zA-Z0-9-_]+)/?$ index.php?action=$1 [QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?action=$1&method=$2 [QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?action=$1&method=$2&method1=$3 [QSA]

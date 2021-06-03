@@ -1,0 +1,15 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Controllers\\":"Controllers/",
+			"Models\\":"Models/",
+			"Sysgem\\":"Sysgem/",
+			"Add\\":"Add/",
+			"Middleware\\":"Middleware/",
+			"Helper\\":"Helper/"
+		}
+	},
+	"require": {
+		"jenssegers/blade": "^1.4"
+	}
+}
